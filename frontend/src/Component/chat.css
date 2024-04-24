@@ -1,3 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #6ed6ed, #2193b0, #6dd5ed, #2193b0);
+
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -5,7 +12,7 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(270deg, #6ed6ed, #2193b0, #6dd5ed, #2193b0);
+  
   background-size: 400% 400%;
   -webkit-animation: AnimationName 15s ease infinite;
   -moz-animation: AnimationName 15s ease infinite;
@@ -30,11 +37,12 @@
 
 .app-title {
   text-align: center;
-  font-size: 24px; 
+  font-size: 35px; 
   font-weight: bolder;
   color: #080f11; 
   margin-bottom: 20px; 
   padding-top: 20px; 
+
 }
 
 
@@ -84,7 +92,7 @@ input[type="text"] {
 button {
   padding: 10px;
   border: none;
-  background-color: #2193b0;
+  background-color: #18b1d7;
   color: white;
   border-radius: 5px;
   cursor: pointer; 
@@ -112,12 +120,37 @@ button:hover {
   background-color: #e0f7fa;
   align-self: flex-end;
   border: 1px solid #0a1112; 
+  border-radius: 15px 15px 15px 1px;
 }
 
 
 /* for the bot message*/
 .message.bot {
+  
   background-color: #ecfaa9;
   align-self: flex-start;
   border: 1px solid #080806; 
+  border-radius: 15px 15px 15px 1px;
+
 }
+.icon {
+  /* Base styles for both user and bot icons */
+  font-size: 20px;
+  display: flex;
+  margin-right: 10px; /* Add some space between the icon and message content */
+  
+}
+.message {
+  display: flex; /* Allow icons and content to be placed side-by-side */
+  align-items: center; /* Vertically align icons and content */
+}
+
+.message-content {
+  flex: 1; /* Allow message content to expand and fill remaining space */
+  padding: 10px; /* Add some padding for readability */
+}
+
+.icon {
+  margin-right: 10px; /* Maintain spacing between icon and content */
+}
+
